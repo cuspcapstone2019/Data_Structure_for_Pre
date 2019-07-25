@@ -198,7 +198,8 @@ function update(source) {
           return d.children || d._children ? "end" : "start";
       })
       .text(function(d) { return d.data.name; })
-      .attr('fill','white')
+	  .attr('fill','white')
+	  .style('font-size','13')
 
   // UPDATE
   var nodeUpdate = nodeEnter.merge(node);
