@@ -197,7 +197,8 @@ function update(source) {
       .attr("text-anchor", function(d) {
           return d.children || d._children ? "end" : "start";
       })
-      .text(function(d) { return d.data.name; });
+      .text(function(d) { return d.data.name; })
+      .attr('fill','white')
 
   // UPDATE
   var nodeUpdate = nodeEnter.merge(node);
